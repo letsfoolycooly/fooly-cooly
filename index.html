@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>No sleep</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shojumaru|Vampiro+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Hello, world! We should all <span>foolycooly</span></h1>
+
+    <p>fooly coolying is great for the soul</p>
+    <img
+      src="https://images.unsplash.com/photo-1583784412776-8554ce63588c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+      alt=""
+    />
+    <a href="https://9anime.ru/" target="blank_">ENTER AT YOUR OWN RISK</a>
+    <div class="w3-content w3-display-container">
+      <img
+        class="mySlides"
+        src="https://lh3.googleusercontent.com/proxy/Th-j8INr9qnk3dNVdd52Bw3ZXCpG_ey4E48zk5qJNF9YtDFHg8lMX6E_Y3SRKo9MkhIp5pQ4nZ-xrait-jhUaKItr_OEQwnnEb8-jQ6-2rj30AEPW92J6J7HfWr85A9_gvTu9g"
+        style="width:auto"
+      />
+      <img
+        class="mySlides"
+        src="https://images-cdn.9gag.com/photo/aYYDyjm_460s.jpg"
+        style="width:auto"
+      />
+      <img
+        class="mySlides"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCNjZPQELbELbPyCDC0v_IevP0kcxhhNzm1zuY6KuYg4tzF6K6"
+        style="width:auto"
+      />
+      <img
+        class="mySlides"
+        src="https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/1329365/Latvian/1329365_Latvian_ShowMasterKeyArt_c91af372-deff-e611-8175-020165574d09.jpg"
+        style="width:auto"
+      />
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
+        &#10095;
+      </button>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

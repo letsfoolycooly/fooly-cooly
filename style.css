@@ -1,0 +1,31 @@
+img {
+  height: 400px;
+  width: auto;
+}
+* {
+  text-align: center;
+  color: red;
+  background-color: #3f403d;
+}
+
+h1 {
+  font-family: "Shojumaru", cursive;
+}
+h1 {
+  text-shadow: 3px 2px white;
+}
+p {
+  font-family: "Mystery Quest", cursive;
+}
+p {
+  text-shadow: 3px 2px white;
+}
+p {
+  text-align: right;
+}
+p:hover {
+  color: white;
+}
+span {
+  color: purple;
+}
